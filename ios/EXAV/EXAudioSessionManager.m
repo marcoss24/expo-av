@@ -46,6 +46,7 @@ EX_REGISTER_SINGLETON_MODULE(AudioSessionManager);
                                                  name:AVAudioSessionMediaServicesWereResetNotification
                                                object:session];
   }
+  session.setAllowHapticsAndSystemSoundsDuringRecording(true)
   return self;
 }
 
